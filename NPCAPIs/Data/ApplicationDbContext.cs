@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NPCAPIs.Models; // ✅ Ensure this matches the actual namespace of your models
+using NPCAPIs.Models; 
 
 namespace NPCAPIs.Data
 
@@ -11,7 +11,7 @@ namespace NPCAPIs.Data
         {
         }
 
-        // ✅ DbSets for your tables
+      
         public DbSet<NewsAPI> News { get; set; }
         
         
@@ -24,7 +24,11 @@ namespace NPCAPIs.Data
         public DbSet<ImportantLinksAPI> ImportantLinks { get; set; }
         public DbSet<InfographAPI> Infograph { get; set; }
         public DbSet<InitiativeNumbersAPI> InitiativeNumbers { get; set; }
-
+        public DbSet<CommonQuestionAPI> CommonQuestion { get; set; }
+        public DbSet<ContactUsAPI> ContactUs { get; set; }
+        public DbSet<VPhotoesAPI> VPhotoes { get; set; }
+        public DbSet<VServicesAPI> VServices { get; set; }
+        public DbSet<LkpMashoraTypeAPI> LkpMashoraType { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -34,6 +38,8 @@ namespace NPCAPIs.Data
             // Configure VGovStat as a view with no key (read-only)
             modelBuilder.Entity<VGovStatAPI>().HasNoKey().ToView("VGovStat");
             modelBuilder.Entity<VActiveEmpAPI>().HasNoKey().ToView("VActiveEmp");
+            modelBuilder.Entity<VPhotoesAPI>().HasNoKey().ToView("VPhotoes");
+            modelBuilder.Entity<VServicesAPI>().HasNoKey().ToView("VServices");
         }
     }
 }

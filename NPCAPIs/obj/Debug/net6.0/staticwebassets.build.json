@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "DWgvhDWAgQRlRawNanrSpsRaOPm0lZxfeCfuwVvTb0g=",
+  "Hash": "1np9TjA6SkwL8K1dyVhQGY2g6UVZi3lSh90dMLQZq6w=",
   "Source": "NPCAPIs",
   "BasePath": "_content/NPCAPIs",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

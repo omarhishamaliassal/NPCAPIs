@@ -1,0 +1,1604 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "NPCAPIs",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/AboutControllerAPI": {
+      "get": {
+        "tags": [
+          "AboutControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AboutAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AboutAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AboutAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/AboutControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "AboutControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AboutAPI"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AboutAPI"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AboutAPI"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/AwarenessMsgControllerAPI": {
+      "get": {
+        "tags": [
+          "AwarenessMsgControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AwarenessMsgAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AwarenessMsgAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AwarenessMsgAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/AwarenessMsgControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "AwarenessMsgControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AwarenessMsgAPI"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AwarenessMsgAPI"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AwarenessMsgAPI"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/CommonQuestionControllerAPI": {
+      "get": {
+        "tags": [
+          "CommonQuestionControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CommonQuestionAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CommonQuestionAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CommonQuestionAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/CommonQuestionControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "CommonQuestionControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommonQuestionAPI"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommonQuestionAPI"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommonQuestionAPI"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ContactUsControllerAPI": {
+      "get": {
+        "tags": [
+          "ContactUsControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContactUsAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContactUsAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContactUsAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ContactUsControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "ContactUsControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContactUsAPI"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContactUsAPI"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContactUsAPI"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ImportantLinksControllerAPI": {
+      "get": {
+        "tags": [
+          "ImportantLinksControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ImportantLinksAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ImportantLinksAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ImportantLinksAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ImportantLinksControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "ImportantLinksControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ImportantLinksAPI"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ImportantLinksAPI"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ImportantLinksAPI"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/InfographControllerAPI": {
+      "get": {
+        "tags": [
+          "InfographControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/InfographAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/InfographAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/InfographAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/InfographControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "InfographControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/InfographAPI"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InfographAPI"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InfographAPI"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/InitiativeNumbersControllerAPI": {
+      "get": {
+        "tags": [
+          "InitiativeNumbersControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/InitiativeNumbersAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/InitiativeNumbersAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/InitiativeNumbersAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/InitiativeNumbersControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "InitiativeNumbersControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/InitiativeNumbersAPI"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InitiativeNumbersAPI"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InitiativeNumbersAPI"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LkpMashoraTypeControllerAPI": {
+      "get": {
+        "tags": [
+          "LkpMashoraTypeControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LkpMashoraTypeAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LkpMashoraTypeAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LkpMashoraTypeAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LkpMashoraTypeControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "LkpMashoraTypeControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LkpMashoraTypeAPI"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LkpMashoraTypeAPI"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LkpMashoraTypeAPI"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/NewsControllerAPI": {
+      "get": {
+        "tags": [
+          "NewsControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NewsAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NewsAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NewsAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/NewsControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "NewsControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/NewsAPI"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NewsAPI"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NewsAPI"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/VActiveEmpControllerAPI": {
+      "get": {
+        "tags": [
+          "VActiveEmpControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VActiveEmpAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VActiveEmpAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VActiveEmpAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/VActiveEmpControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "VActiveEmpControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/VActiveEmpAPI"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VActiveEmpAPI"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VActiveEmpAPI"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/VGovStatControllerAPI": {
+      "get": {
+        "tags": [
+          "VGovStatControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VGovStatAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VGovStatAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VGovStatAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/VGovStatControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "VGovStatControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/VGovStatAPI"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VGovStatAPI"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VGovStatAPI"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/VideoLibraryControllerAPI": {
+      "get": {
+        "tags": [
+          "VideoLibraryControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VideoLibraryAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VideoLibraryAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VideoLibraryAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/VideoLibraryControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "VideoLibraryControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/VideoLibraryAPI"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VideoLibraryAPI"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VideoLibraryAPI"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/VPhotoesControllerAPI": {
+      "get": {
+        "tags": [
+          "VPhotoesControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VPhotoesAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VPhotoesAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VPhotoesAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/VPhotoesControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "VPhotoesControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "albumId",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VPhotoesAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VPhotoesAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VPhotoesAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/VServicesControllerAPI": {
+      "get": {
+        "tags": [
+          "VServicesControllerAPI"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VServicesAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VServicesAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VServicesAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/VServicesControllerAPI/GetById": {
+      "get": {
+        "tags": [
+          "VServicesControllerAPI"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VServicesAPI"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VServicesAPI"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VServicesAPI"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AboutAPI": {
+        "type": "object",
+        "properties": {
+          "aboutId": {
+            "type": "number",
+            "format": "double"
+          },
+          "aboutText": {
+            "type": "string",
+            "nullable": true
+          },
+          "aboutImg": {
+            "type": "string",
+            "nullable": true
+          },
+          "chairmanWord": {
+            "type": "string",
+            "nullable": true
+          },
+          "chairmanImg": {
+            "type": "string",
+            "nullable": true
+          },
+          "ministerWord": {
+            "type": "string",
+            "nullable": true
+          },
+          "ministerImg": {
+            "type": "string",
+            "nullable": true
+          },
+          "structureText": {
+            "type": "string",
+            "nullable": true
+          },
+          "structureImg": {
+            "type": "string",
+            "nullable": true
+          },
+          "pillar1": {
+            "type": "string",
+            "nullable": true
+          },
+          "pillar1Text": {
+            "type": "string",
+            "nullable": true
+          },
+          "pillar2": {
+            "type": "string",
+            "nullable": true
+          },
+          "pillar2Text": {
+            "type": "string",
+            "nullable": true
+          },
+          "pillar3": {
+            "type": "string",
+            "nullable": true
+          },
+          "pillar3Text": {
+            "type": "string",
+            "nullable": true
+          },
+          "mechanisms": {
+            "type": "string",
+            "nullable": true
+          },
+          "mechanismsFile": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AwarenessMsgAPI": {
+        "type": "object",
+        "properties": {
+          "msgId": {
+            "type": "number",
+            "format": "double"
+          },
+          "msgText": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderView": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CommonQuestionAPI": {
+        "type": "object",
+        "properties": {
+          "qId": {
+            "type": "number",
+            "format": "double"
+          },
+          "quest": {
+            "type": "string",
+            "nullable": true
+          },
+          "answer": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContactUsAPI": {
+        "type": "object",
+        "properties": {
+          "cuId": {
+            "type": "number",
+            "format": "double"
+          },
+          "mobileNum": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ImportantLinksAPI": {
+        "type": "object",
+        "properties": {
+          "linkId": {
+            "type": "number",
+            "format": "double"
+          },
+          "linkName": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkURL": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkImage": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkOrder": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "InfographAPI": {
+        "type": "object",
+        "properties": {
+          "infoId": {
+            "type": "number",
+            "format": "double"
+          },
+          "infoTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "infoDesc": {
+            "type": "string",
+            "nullable": true
+          },
+          "infoPhoto": {
+            "type": "string",
+            "nullable": true
+          },
+          "publicationDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "orderView": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "urLink": {
+            "type": "string",
+            "nullable": true
+          },
+          "onMainPage": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "InitiativeNumbersAPI": {
+        "type": "object",
+        "properties": {
+          "initId": {
+            "type": "number",
+            "format": "double"
+          },
+          "indTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "indNumber": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "indUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "onMainPage": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LkpMashoraTypeAPI": {
+        "type": "object",
+        "properties": {
+          "mashoraId": {
+            "type": "number",
+            "format": "double"
+          },
+          "mashoraDesc": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NewsAPI": {
+        "type": "object",
+        "properties": {
+          "newsId": {
+            "type": "number",
+            "format": "double"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "newsText": {
+            "type": "string",
+            "nullable": true
+          },
+          "smallPhoto": {
+            "type": "string",
+            "nullable": true
+          },
+          "largPhoto": {
+            "type": "string",
+            "nullable": true
+          },
+          "publishDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "newsSource": {
+            "type": "string",
+            "nullable": true
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "onClockTopic": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "onMainPage": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VActiveEmpAPI": {
+        "type": "object",
+        "properties": {
+          "govId": {
+            "type": "number",
+            "format": "double"
+          },
+          "govName": {
+            "type": "string",
+            "nullable": true
+          },
+          "empName": {
+            "type": "string",
+            "nullable": true
+          },
+          "empJob": {
+            "type": "string",
+            "nullable": true
+          },
+          "empFacilityUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "honorDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "empImage": {
+            "type": "string",
+            "nullable": true
+          },
+          "onMainPage": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VGovStatAPI": {
+        "type": "object",
+        "properties": {
+          "govId": {
+            "type": "number",
+            "format": "double"
+          },
+          "roomsNumUnits": {
+            "type": "number",
+            "format": "double"
+          },
+          "roomsNumHospitals": {
+            "type": "number",
+            "format": "double"
+          },
+          "workersNum": {
+            "type": "number",
+            "format": "double"
+          },
+          "govName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VPhotoesAPI": {
+        "type": "object",
+        "properties": {
+          "albumId": {
+            "type": "number",
+            "format": "double"
+          },
+          "photoId": {
+            "type": "number",
+            "format": "double"
+          },
+          "albumTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "publishDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "photoTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "photo": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderView": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VServicesAPI": {
+        "type": "object",
+        "properties": {
+          "mashoraId": {
+            "type": "number",
+            "format": "double"
+          },
+          "mashoraDesc": {
+            "type": "string",
+            "nullable": true
+          },
+          "mashoraFile": {
+            "type": "string",
+            "nullable": true
+          },
+          "servDesc": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VideoLibraryAPI": {
+        "type": "object",
+        "properties": {
+          "vedioId": {
+            "type": "number",
+            "format": "double"
+          },
+          "vedioTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "publishDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "vCoverPhoto": {
+            "type": "string",
+            "nullable": true
+          },
+          "vedioURL": {
+            "type": "string",
+            "nullable": true
+          },
+          "onMainPage": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

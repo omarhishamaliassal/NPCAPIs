@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NPCAPIs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44735959a7875ef7f4a3197a6ccd4c1447321b0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("NPCAPIs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NPCAPIs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
