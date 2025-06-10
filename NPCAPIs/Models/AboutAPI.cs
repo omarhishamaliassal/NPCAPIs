@@ -26,5 +26,7 @@ namespace NPCAPIs.Models
         public string Pillar3Text { get; set; }
 
         public string Mechanisms { get; set; }
+        public string? MechanismsFile { get; set; }
+        
     }
 }
