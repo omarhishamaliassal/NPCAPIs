@@ -34,7 +34,8 @@ namespace NPCAPIs.Controllers
                     p.PublishDate,
                     p.PhotoTitle,
                     p.Photo,
-                    p.OrderView
+                    p.OrderView,
+                    p.CoverPhoto
                     
                 })
                 .ToListAsync();
@@ -56,7 +57,8 @@ namespace NPCAPIs.Controllers
                     p.PublishDate,
                     p.PhotoTitle,
                     p.Photo,
-                    p.OrderView
+                    p.OrderView,
+                    p.CoverPhoto
             
                 })
                 .ToListAsync();
