@@ -16,6 +16,7 @@ namespace NPCAPIs.Models
         public decimal?OrderView { get; set; }
 
         public int? IsActive { get; set; }
+        public string? CoverPhoto { get; set; }
 
     }
 }
