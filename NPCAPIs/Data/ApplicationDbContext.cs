@@ -29,6 +29,7 @@ namespace NPCAPIs.Data
         public DbSet<VPhotoesAPI> VPhotoes { get; set; }
         public DbSet<VServicesAPI> VServices { get; set; }
         public DbSet<LkpMashoraTypeAPI> LkpMashoraType { get; set; }
+        public DbSet<OpinionAPI> Opinion { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
