@@ -27,6 +27,7 @@ namespace NPCAPIs.Data
         public DbSet<CommonQuestionAPI> CommonQuestion { get; set; }
         public DbSet<ContactUsAPI> ContactUs { get; set; }
         public DbSet<VPhotoesAPI> VPhotoes { get; set; }
+        public DbSet<VIndicatorsAPI> VIndicators { get; set; }
         public DbSet<VServicesAPI> VServices { get; set; }
         public DbSet<LkpMashoraTypeAPI> LkpMashoraType { get; set; }
         public DbSet<OpinionAPI> Opinion { get; set; }
@@ -41,6 +42,7 @@ namespace NPCAPIs.Data
             modelBuilder.Entity<VActiveEmpAPI>().HasNoKey().ToView("VActiveEmp");
             modelBuilder.Entity<VPhotoesAPI>().HasNoKey().ToView("VPhotoes");
             modelBuilder.Entity<VServicesAPI>().HasNoKey().ToView("VServices");
+            modelBuilder.Entity<VIndicatorsAPI>().HasNoKey().ToView("VIndicators");
         }
     }
 }
