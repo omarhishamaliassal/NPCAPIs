@@ -31,7 +31,9 @@ namespace NPCAPIs.Data
         public DbSet<VServicesAPI> VServices { get; set; }
         public DbSet<LkpMashoraTypeAPI> LkpMashoraType { get; set; }
         public DbSet<OpinionAPI> Opinion { get; set; }
-
+        public DbSet<TeamMember> TeamMembers { get; set; }
+        public DbSet<LkpQualification> LkpQualifications { get; set; }
+        public DbSet<Regestration> Regestrations { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -43,6 +45,14 @@ namespace NPCAPIs.Data
             modelBuilder.Entity<VPhotoesAPI>().HasNoKey().ToView("VPhotoes");
             modelBuilder.Entity<VServicesAPI>().HasNoKey().ToView("VServices");
             modelBuilder.Entity<VIndicatorsAPI>().HasNoKey().ToView("VIndicators");
+            modelBuilder.Entity<TeamMember>()
+               .HasOne(tm => tm.Qualification)
+               .WithMany(q => q.TeamMembers)
+               .HasForeignKey(tm => tm.QualificationId);
+            modelBuilder.Entity<Regestration>()
+         .HasOne(tm => tm.Qualification)
+         .WithMany(q => q.Regestrations)
+         .HasForeignKey(tm => tm.QualificationId);
         }
     }
 }
